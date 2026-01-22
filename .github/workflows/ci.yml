@@ -22,7 +22,7 @@ jobs:
                   pip install pytest httpx
             - name: Run tests
               run: |
-                  pytest
+                  python -m pytest
 
     lint:
         runs-on: ubuntu-latest
