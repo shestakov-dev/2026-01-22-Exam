@@ -11,7 +11,7 @@ def client():
 def test_read_main(client):
     response = client.get("/")
 
-    asert response.status_code == 200
+    assert response.status_code == 200
 
     expected_response = {
         "message": "File Storage API",
