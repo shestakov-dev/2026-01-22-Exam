@@ -38,7 +38,7 @@ jobs:
                   pip install flake8
             - name: Run Lint
               run: |
-                  flake8 . --count --exit-zero --statistics
+                  flake8 . --count --statistics --ignore=E302,E305,E501,W293,W391
 
     build:
         runs-on: ubuntu-latest
